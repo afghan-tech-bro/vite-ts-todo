@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const value = ref('Hello')
+const value = ref('Hello');
 
 const logMessage = () => console.log('%cApp.vue line:6 value.value', 'color: #007acc;', value.value);
 </script>
 
 <template lang="pug">
 div
-  button(@click="logMessage") {{ value }}
+  button(@click="logMessage")
+    | {{ value }}
 router-view
 </template>
 

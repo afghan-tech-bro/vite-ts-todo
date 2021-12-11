@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     // Enable vue/script-setup-uses-vars rule
     'vue/script-setup-uses-vars': 'error',
+    "linebreak-style": 0
   },
   overrides: [
     {
