@@ -1,7 +1,11 @@
 <template lang="pug">
-DemoComponent
+TestComponent
 </template>
 
 <script lang="ts" setup>
-import DemoComponent from '@components/demo.vue';
+import TestComponent from '@components/demo.vue';
 </script>
+
+<route lang="yaml">
+name: 'home-page'
+</route>

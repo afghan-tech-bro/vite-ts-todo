@@ -99,6 +99,11 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/node@^16.11.12":
+  version "16.11.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.12.tgz#ac7fb693ac587ee182c3780c26eb65546a1a3c10"
+  integrity sha512-+2Iggwg7PxoO5Kyhvsq9VarmPbIelXP070HMImEpbtGCoyWNINQj4wzjbQCXzdHTRXnqufutJb5KAURZANNBAw==
+
 "@typescript-eslint/eslint-plugin@^5.0.0":
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.6.0.tgz#efd8668b3d6627c46ce722c2afe813928fe120a0"
@@ -246,7 +251,7 @@
     "@vue/compiler-core" "3.2.24"
     "@vue/shared" "3.2.24"
 
-"@vue/compiler-sfc@3.2.24":
+"@vue/compiler-sfc@3.2.24", "@vue/compiler-sfc@^3.2.4":
   version "3.2.24"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.2.24.tgz#803a309e1935fc85981218d88fd4fb5db05afdb1"
   integrity sha512-YGPcIvVJp2qTPkuT6kT43Eo1xjstyY4bmuiSV31my4bQMBFVR26ANmifUSt759Blok71gK0WzfIZHbcOKYOeKA==
@@ -2487,6 +2492,15 @@ vite-plugin-pages@^0.19.0:
     json5 "^2.2.0"
     local-pkg "^0.4.0"
     yaml "^2.0.0-9"
+
+vite-plugin-vue-layouts@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vue-layouts/-/vite-plugin-vue-layouts-0.5.0.tgz#2dd05f7682e5aba5e4d29b8169efc2611fe75e53"
+  integrity sha512-KN03GMSGNrWxeHJo5OO9fvdZh44PfievNAoLeMbf20UQPBBO6kpIMVTYB6sFPMWmiTbqZmq3we4z/ocJkxAEiA==
+  dependencies:
+    "@vue/compiler-sfc" "^3.2.4"
+    debug "^4.3.2"
+    fast-glob "^3.2.7"
 
 vite@^2.5.8, vite@^2.7.0:
   version "2.7.1"
