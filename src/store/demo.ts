@@ -21,9 +21,17 @@ const useStore = defineStore('demo', {
     reset() {
       this.counter = 0;
       this.clicks = 0;
-    }
-  }
-})
+    },
+  },
+  persist: {
+    enabled: true,
+    strategies: [
+      {
+        storage: localStorage,
+      },
+    ],
+  },
+});
 
 if (import.meta.hot) {
   import.meta.hot.accept(acceptHMRUpdate(useStore, import.meta.hot));

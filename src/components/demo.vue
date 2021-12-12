@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import demoStore from '@store/index';
+import demoStore from '@store/demo';
 
 const store = demoStore();
 </script>
