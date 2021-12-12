@@ -10,9 +10,6 @@ const {
   FIREBASE_APP_ID,
 } = import.meta.env;
 
-console.log(FIREBASE_PROJECT_ID?.toString())
-
-
 const firebaseConfig = {
   apiKey: FIREBASE_API_KEY?.toString(),
   authDomain: FIREBASE_AUTH_DOMAIN?.toString(),

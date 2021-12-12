@@ -6,9 +6,9 @@ const store = demoStore();
 
 <template lang="pug">
 div
-  button(@click="store.add")
+  button(@click.prevent="store.add")
     | +
-  button(@click="store.sub")
+  button(@click.prevent="store.sub")
     | -
   p Total: {{ store.getCounter }}
   p Clicks: {{ store.getClicks }}
