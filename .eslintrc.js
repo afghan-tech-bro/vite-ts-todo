@@ -30,6 +30,7 @@ module.exports = {
     ],
     "linebreak-style": 0
   },
+  ignorePatterns: ['components.d.ts'],
   overrides: [
     {
       files: ['src/**/*.vue'],
