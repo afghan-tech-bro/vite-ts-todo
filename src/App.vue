@@ -1,16 +1,24 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import demoStore from '@store/index';
 
-const value = ref(0);
+const store = demoStore();
 
-const handleButtonClick = () => {
-  value.value += 1;
-};
+const handleAdd = () => store.add();
+const handleSub = () => store.sub();
+const handleReset = () => store.reset();
 </script>
 
 <template lang="pug">
 div
-  button(@click="handleButtonClick")
-    | Clicks: {{ value }}
-  router-view
+  button(@click="handleAdd")
+    | +
+  button(@click="handleSub")
+    | -
+  p Total: {{ store.getCounter }}
+  p Clicks: {{ store.getClicks }}
+
+div
+  button(@click="handleReset")
+    | Reset
+router-view
 </template>
